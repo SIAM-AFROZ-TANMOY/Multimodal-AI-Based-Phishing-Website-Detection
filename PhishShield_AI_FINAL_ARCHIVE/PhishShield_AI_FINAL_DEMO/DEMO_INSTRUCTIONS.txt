@@ -1,0 +1,29 @@
+
+============================================================
+PHISHSHIELD AI - FINAL DEMO
+============================================================
+
+PROJECT:
+PhishShield AI - Multimodal Phishing Detection System
+
+MODELS:
+1. URL CNN
+2. URL BiLSTM
+3. Screenshot CNN
+4. URL + Visual Fusion
+
+FUSION:
+URL Weight    = 60%
+Visual Weight = 40%
+Threshold     = 0.30
+
+BACKEND:
+FastAPI
+
+DEMO:
+URL + Screenshot -> AI Analysis -> Final Prediction
+
+IMPORTANT:
+No training required for demo.
+All trained models are already saved.
+============================================================
