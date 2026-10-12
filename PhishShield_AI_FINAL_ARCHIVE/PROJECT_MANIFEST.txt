@@ -1,0 +1,49 @@
+
+PHISHSHIELD AI
+FINAL PROJECT ARCHIVE
+=====================
+
+Backup time:
+2026-10-02 11:02:47
+
+WORKING SYSTEM
+--------------
+URL CNN
+URL BiLSTM
+HTML Neural Network
+Screenshot CNN
+URL + Visual Fusion
+FastAPI Backend
+Gradio Frontend
+
+FUSION
+------
+URL Weight      : 60%
+Visual Weight   : 40%
+Threshold       : 0.30
+
+BACKEND ENDPOINTS
+-----------------
+GET  /
+GET  /health
+POST /predict/url
+POST /predict/multimodal
+
+MODEL TRAINING
+--------------
+No retraining required.
+
+BACKEND FILES
+-------------
+phishshield_fusion_config.json | 0.00 MB
+phishshield_html_scaler.pkl | 0.00 MB
+phishshield_url_cnn.keras | 1.32 MB
+phishshield_html_nn.keras | 0.20 MB
+phishshield_html_features.pkl | 0.00 MB
+main.py | 0.01 MB
+phishshield_html_branch_info.pkl | 0.00 MB
+phishshield_url_tokenizer.pkl | 0.00 MB
+phishshield_url_bilstm.keras | 1.38 MB
+phishshield_project_config.json | 0.00 MB
+phishshield_screenshot_cnn_improved.keras | 4.92 MB
+__pycache__/main.cpython-313.pyc | 0.01 MB

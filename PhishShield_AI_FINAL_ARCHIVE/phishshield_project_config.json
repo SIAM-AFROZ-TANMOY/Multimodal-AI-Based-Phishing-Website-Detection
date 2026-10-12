@@ -1,0 +1,46 @@
+{
+    "project_name": "PhishShield AI",
+    "task": "Phishing Detection using Neural Networks",
+    "label_mapping": {
+        "0": "Legitimate",
+        "1": "Phishing"
+    },
+    "url": {
+        "max_length": 74,
+        "models": [
+            "phishshield_url_cnn.keras",
+            "phishshield_url_bilstm.keras"
+        ],
+        "tokenizer": "phishshield_url_tokenizer.pkl"
+    },
+    "html": {
+        "input_features": 26,
+        "model": "phishshield_html_nn.keras",
+        "scaler": "phishshield_html_scaler.pkl",
+        "features": "phishshield_html_features.pkl",
+        "branch_info": "phishshield_html_branch_info.pkl"
+    },
+    "screenshot": {
+        "image_size": [
+            224,
+            224
+        ],
+        "channels": 3,
+        "model": "phishshield_screenshot_cnn_improved.keras"
+    },
+    "multimodal": {
+        "branches": [
+            "URL CNN",
+            "URL BiLSTM",
+            "HTML Neural Network",
+            "Screenshot CNN"
+        ]
+    },
+    "dataset": {
+        "name": "PHIUSIIL",
+        "total_samples": 235795,
+        "features": 54,
+        "missing_values": 0,
+        "duplicate_rows": 0
+    }
+}

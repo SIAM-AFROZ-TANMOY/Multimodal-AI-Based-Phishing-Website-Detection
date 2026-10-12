@@ -1,0 +1,31 @@
+{
+    "fusion_type": "URL + Visual Multimodal Fusion",
+    "branches": {
+        "URL_CNN": 0.3,
+        "URL_BiLSTM": 0.3,
+        "Screenshot_CNN": 0.4
+    },
+    "url_internal_average": {
+        "URL_CNN": 0.5,
+        "URL_BiLSTM": 0.5
+    },
+    "final_formula": "0.60 * URL_probability + 0.40 * Visual_probability",
+    "decision_threshold": 0.3,
+    "evaluation_samples": 44,
+    "accuracy": 0.8409,
+    "roc_auc": 0.8083,
+    "confusion_matrix": [
+        [
+            23,
+            4
+        ],
+        [
+            3,
+            14
+        ]
+    ],
+    "screenshot_model": "phishshield_screenshot_cnn_improved.keras",
+    "url_cnn_model": "phishshield_url_cnn.keras",
+    "url_bilstm_model": "phishshield_url_bilstm.keras",
+    "note": "Threshold selected from the verified 44-sample URL + Visual evaluation set. No model retraining."
+}
